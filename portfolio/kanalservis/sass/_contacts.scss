@@ -1,0 +1,109 @@
+.contacts {
+  background-color: #2a5d98;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  &:after {
+    position: absolute;
+    content: ' ';
+    background-image: url(../img/footer_icon.png);
+    width: 100%;
+    height: 48%;
+    bottom: 0;
+    right: -68%;;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+    h1 {
+      color: #fff;
+      margin-bottom: 50px;
+    }
+  .contacts_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 43%;
+    min-width: 480px;
+    h5 {
+      color: #fff;
+      font-size: 18px;
+      line-height: 27px;
+      max-width: 500px;
+      margin-bottom: 70px;
+      a {
+        font-family: 'GothamProBlack', Arial, sans-serif;
+        font-size: 24px;
+        color: #fff;
+      }
+    }
+    button {
+      max-width: 360px;
+      height: 60px;
+      background-color: #fad007;
+      font-family: 'GothamProBlack', Arial, sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 30px;
+      color: #333;
+      cursor: pointer;
+      margin-bottom: 70px;
+      box-shadow: 0px 0px 15px 3px rgba(250, 208, 7, 0.55);
+      transition: box-shadow .3s, background-color .3s;
+      &:hover {
+        box-shadow: none;
+        background-color: #ffdc30;
+      }
+    }
+    a {
+      font-family: 'GothamProRegular', Arial, sans-serif;
+      font-size: 24px;
+      line-height: 36px;
+      color: #fff;
+    }
+    .contacts__social {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 120px;
+      margin-top: 60px;
+      a {
+        margin-right: 20px;
+        svg {
+          width: 24px;
+          height: 24px;
+          fill: #fff;
+          opacity: .7;
+        }
+      }
+    }
+    .contacts__logo {
+      max-width: 200px;
+    }
+  }
+  }
+  .contacts__map {
+    min-width: 480px;
+  }
+  .contacts__map_wrap {
+    position: relative;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+    margin-top: -50px;
+    .map {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

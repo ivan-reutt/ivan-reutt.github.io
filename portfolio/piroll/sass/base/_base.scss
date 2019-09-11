@@ -1,0 +1,59 @@
+/**********************
+* Base style
+**********************/
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  outline-color: transparent;
+}
+
+body {
+  background: #fff;
+  font-family: 'PT sans', sans-serif;
+  font-size: 10px;
+  color: #000;
+  font-weight: 400;
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+br {
+  font-size: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 15px;
+}
+
+.submit {
+    background-color: #10c9c3;
+    border: none;
+    color: #fff;
+    padding: 20px 45px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+}

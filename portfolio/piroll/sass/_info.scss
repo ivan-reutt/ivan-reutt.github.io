@@ -1,0 +1,35 @@
+.info {
+  background-color: #10c9c3;
+  padding: 100px 0;
+  &__item {
+    display: flex;
+    align-items: center;
+    &_wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    img {
+      height: 34px;
+    }
+    &__desc {
+      display: flex;
+      flex-direction: column;
+      margin-left: 30px;
+      p {
+        text-transform: uppercase;
+        margin-bottom: 0px;
+        font-size: 12px;
+        text-align: left;
+        color: #ffffff;
+        line-height: 1;
+        &.info__item__desc__number {
+          font-size: 18px;
+        margin-bottom: 15px;
+        }
+      }
+     
+    }
+  }
+}

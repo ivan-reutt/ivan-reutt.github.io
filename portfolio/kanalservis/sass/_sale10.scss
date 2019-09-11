@@ -1,0 +1,59 @@
+.sale10 {
+  background-color: #2a5d98;
+  padding: 120px 15px;
+  .container {
+    display: flex;
+  }
+  &__card {
+    width: 33%;
+    position: relative;
+    margin-right: 10px;
+     img {
+    position: absolute;
+    left: 5%;
+    top: -180px;
+    max-width: 410px;
+  }
+  }
+ 
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 67%;
+    h3 {
+      font-size: 50px;
+      margin-bottom: 80px;
+    }
+  }
+  form {
+    display: flex;
+    width: 100%;
+    padding-right: 50px;
+    input {
+      width: 50%;
+      height: 60px;
+      border: none;
+      border-radius: 30px;
+      max-width: 360px;
+      min-width: 250px;
+      font-family: 'GothamProMedium', Arial, sans-serif;
+      font-size: 16px;
+      color: #505050;
+      padding: 0 25px;
+      margin-right: 20px;
+    }
+    button {
+      background-color: #fad007;
+      color: #333;
+      height: 60px;
+      max-width: 300px;
+      width: 40%;
+      border-radius: 30px;
+      transition: background-color .3s;
+      
+      &:hover {
+        background-color: #ffdc30;
+      }
+  }
+}
+}

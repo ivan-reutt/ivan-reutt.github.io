@@ -1,0 +1,36 @@
+.testimonials {
+  background-color: #10c9c3;
+  height: 500px;
+  &__item {
+    max-width: 708px;
+    margin: auto;
+  }
+  .owl-carousel {
+    padding-top: 180px;
+  }
+  p {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 12px;
+    margin: auto;
+  }
+  h5 {
+    padding: 0 15px;
+  }
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+  padding-top: 90px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: none;
+    background-color: #b0e8e6;
+    width: 6px;
+    height: 6px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    transition: .3s;
+}

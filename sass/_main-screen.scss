@@ -1,0 +1,123 @@
+.main-screen {
+  background-image: url(../img/cosmos-1853491_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+  transition: 1.8s;
+  .noiseBG {
+    mix-blend-mode: multiply;
+    background-image: url(../img/noise.png);
+    opacity: 0.1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+  }
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    z-index: 5;
+    a {
+      position: relative;
+      color: #a39ded;
+      font-size: 22px;
+      text-transform: uppercase;
+      margin-left: 20px;
+      line-height: 28px;
+      transition: .4s;
+      &::before {
+        content: ' ';
+        position: absolute;
+        bottom: -20px;
+        height: 0px;
+        left: 50%;
+        right: 50%;
+        background-color: #443e95;    
+        transition: .5s;
+      }
+      &:hover {
+        &::before {
+          left: 0;
+          right: 0;
+          height: 3px;
+          bottom: -3px;
+        }
+      }
+    }
+  }
+  &__name {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      position: relative;
+      font-size: 96px;
+      color: #c7c3fd;
+      font-family: 'Monoton', cursive;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+    h3 {
+      font-size: 36px;
+      color: #c7c3fd;
+    }
+  }
+  &__social {
+    position: absolute;    
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    right: 50px;
+    z-index: 3;
+    a {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+      &:hover {
+        i {
+          color: #ffffff;
+        }
+      }
+      i {
+        font-size: 30px;
+        line-height: 40px;
+        color: #a39ded;
+        transition: .3s;
+      }
+    }
+  }
+  &__button-down {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 25px);
+    height: 95px;
+    width: 50px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 3;
+    i {
+      margin: auto 0;
+      font-size: 52px;
+      margin-top: 45px;
+      color: #a39ded;
+      opacity: .5;
+    }
+  }
+}

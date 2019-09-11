@@ -1,0 +1,70 @@
+/**********************
+* typography
+**********************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+hr {
+  margin: 0;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: 'GothamProBlack', Arial, sans-serif;
+  font-size: 60px;
+  line-height: 72px;
+  color: #fff;
+}
+
+h2 {
+ 
+}
+
+h3 {
+  font-family: 'GothamProBlack', Arial, sans-serif;
+  font-size: 36px;
+  color: #fff;
+  
+}
+
+h4 {
+  font-family: 'GothamProMedium', Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  
+}
+
+h5 {
+  font-family: 'GothamProRegular', Arial, sans-serif;
+  font-size: 14px;
+  color: #999;
+}
+
+h6 {
+  font-family: 'GothamProBlack', Arial, sans-serif;
+  font-size: 16px;
+  color: #505050;
+  
+}
+
+p {
+  font-family: 'GothamProRegular', Arial, sans-serif;
+  font-size: 16px;
+  color: #505050;
+  line-height: 24px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  
+}

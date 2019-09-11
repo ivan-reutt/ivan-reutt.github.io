@@ -1,0 +1,299 @@
+/**********************
+* MEDIA
+**********************/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .footer__rights {
+    margin-right: 15px;
+  }
+
+  .footer__contacts {
+    margin-right: 15px;
+  }
+
+  .footer__social {
+    margin-left: 15px;
+  }
+
+  .footer__links_1,
+  .footer__links_2 {
+    margin-right: 15px;
+  }
+
+  .profession {
+    padding: 50px 0;
+    padding-bottom: 75px;
+
+    h3 {
+      text-align: center;
+    }
+
+    &__bg {
+      background: none;
+    }
+
+    .profession__skills {
+      margin: auto;
+    }
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .clients {
+    padding: 50px 80px;
+  }
+
+  .clients__logo img {
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  .help__info {
+    padding: 75px 15px;
+  }
+
+  .about__me {
+    background: none;
+    background-color: #f5f5f5;
+    height: auto;
+
+    &__info {
+      padding: 50px 25px;
+      text-align: center;
+
+      p {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto 30px;
+        text-align: center;
+      }
+    }
+  }
+
+  .about__home {
+    padding: 50px 15px;
+  }
+
+  .works__item {
+    width: 33.33%;
+
+    & img {
+      height: auto;
+    }
+  }
+
+  .project__bg {
+    background: none;
+  }
+
+  .project__info,
+  .project__client {
+    max-width: 700px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .project__info {
+    padding-top: 50px;
+
+    & p {
+      text-align: center;
+    }
+  }
+
+  .project__client {
+    padding-bottom: 50px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .profession {
+    background-image: none;
+
+    &__skills {
+      max-width: 100%;
+    }
+  }
+
+  .info {
+    padding: 50px 0;
+
+    &__item {
+      width: 50%;
+      padding: 30px;
+      justify-content: center;
+    }
+  }
+
+  .works__item {
+    width: 50%;
+  }
+
+  .process {
+    padding: 50px 10px;
+  }
+
+  .testimonials .owl-carousel {
+    padding-top: 100px;
+  }
+
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    padding-top: 50px;
+  }
+
+  .testimonials {
+    height: 400px;
+  }
+
+  .clients {
+    padding: 30px 50px;
+
+    &__logo {
+      justify-content: center;
+    }
+  }
+
+  .clients__logo img {
+    margin-right: 10px;
+  }
+
+  .help__info {
+    padding: 50px 15px;
+  }
+
+  .footer__contacts,
+  .footer__rights {
+    width: 50%;
+    margin: 0;
+  }
+
+  .footer__contacts {
+    align-items: flex-end;
+  }
+
+  .footer {
+    padding: 50px 20px 50px;
+  }
+
+  .contact__info__form_wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__info__form_wrap {
+    padding-top: 50px;
+  }
+
+  .contact__info {
+    margin-bottom: 25px;
+    max-width: 100%;
+  }
+
+  .contact__info_wrap {
+    margin-bottom: 20px;
+  }
+
+  .contact__info_wrap,
+  .contact__info__form {
+    width: 100%;
+  }
+
+  .main-screen header {
+
+    height: 57px;
+    padding: 15px;
+    box-shadow: 0 1px 4px 0 #999999;
+    background-color: rgba(255, 255, 255, 0.95);
+
+    
+    nav {
+      flex-direction: column;
+      display: none;
+      position: fixed;
+      width: 100%;
+      left: 0;
+      top: 57px;
+      padding: 0;
+      padding-bottom: 15px;
+      background-color: rgba(255, 255, 255, 0.95);
+      align-items: center;
+
+      a {
+        padding: 5px;
+      }
+    }
+  }
+  .main-top {
+    height: 57px;
+    header {
+
+      height: 57px;
+      padding: 15px;
+      box-shadow: 0 1px 4px 0 #999999;
+      background-color: rgba(255, 255, 255, 0.95);
+
+
+    nav {
+      flex-direction: column;
+      display: none;
+      position: fixed;
+      width: 100%;
+      left: 0;
+      top: 57px;
+      padding: 0;
+      padding-bottom: 15px;
+      background-color: rgba(255, 255, 255, 0.95);
+      align-items: center;
+
+      a {
+        padding: 5px;
+      }
+    }
+  }
+  }
+  .burger-menu {
+    display: flex;
+  }
+  
+  .header__wrap {
+    &.active {
+      display: flex;
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .works__item {
+    width: 100%;
+  }
+
+  .main-screen__info {
+    padding: 0 15px;
+    width: 100%;
+    right: 0;
+  }
+
+  .process {
+    padding: 25px 10px;
+  }
+
+  .testimonials .owl-carousel {
+    padding-top: 25px;
+  }
+
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    padding-top: 10px;
+  }
+
+  .testimonials {
+    height: 350px;
+  }
+
+  .clients {
+    padding: 20px 30px;
+  }
+}

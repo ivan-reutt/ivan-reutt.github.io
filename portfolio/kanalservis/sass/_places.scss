@@ -1,0 +1,132 @@
+.places {
+  min-height: 700px;
+  width: 100%;
+  display: flex;
+
+  &__button {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/s-uslugi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+
+    h3 {
+      color: #2a5d98;
+      text-transform: uppercase;
+      line-height: 78px;
+
+      &:first-child {
+        font-size: 70px;
+      }
+
+      &:nth-child(2) {
+        font-size: 91px;
+      }
+
+      &:nth-child(3) {
+        font-size: 33px;
+      }
+    }
+
+    button {
+      width: 300px;
+      height: 60px;
+      background-color: #fad007;
+      font-family: 'GothamProBlack', Arial, sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 30px;
+      color: #333;
+      cursor: pointer;
+      margin-top: 30px;
+      box-shadow: 0px 0px 15px 3px rgba(250, 208, 7, 0.55);
+      transition: box-shadow .3s, background-color .3s;
+
+      &:hover {
+        box-shadow: none;
+        background-color: #ffdc30;
+      }
+
+
+    }
+  }
+
+  &__table {
+    display: flex;
+    flex-wrap: wrap;
+    width: 67%;
+
+    &__item {
+      width: 25%;
+      background-color: #f8fcff;
+      border: 1px solid #ecf3f8;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+      transition: all .5s;
+      &:hover {
+        border: none;
+        background-color: #2a5d98;
+        transition: .5s;
+      }
+      &:hover div {
+        transform: translateY(-30px);
+        transition: .5s;
+      }
+      &:hover div svg {
+          fill: #fff;
+          opacity: 1;
+      }
+      &:hover div h4 {
+        color: #fff;
+      }
+      &:hover button {
+        transform: translateY(-80px);
+        transition: .5s;
+      }
+
+      button {
+        position: absolute;
+        width: 100%;
+        height: 80px;
+        font-size: 16px;
+        background-color: #fad007;
+        bottom: -80px;
+        align-items: center;
+        color: #333;
+        transition: .5s;
+      }
+      
+      &__info {
+        width: 100%;
+        height: 100%;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: .5s;
+        svg {
+          width: 67px;
+          height: 67px;
+          margin-bottom: 50px;
+          fill: #4c6785;
+          opacity: .5;
+        }
+
+        h4 {
+          color: #4c6785;
+        }
+      }
+    }
+  }
+}

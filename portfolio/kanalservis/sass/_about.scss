@@ -1,0 +1,67 @@
+.about {
+  background-color: rgb(249, 249, 249);
+  &_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 120px 0;
+  }
+  &__info {
+    margin-bottom: 100px;
+    h1 {
+      color: #505050;
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 60px;
+      span {
+        color: #2a5d98;
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 27px;
+      width: 50%;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  &__numbers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    &__item {
+      text-align: center;
+      h3 {
+        color: #505050;
+        font-size: 48px;
+        display: inline-block;
+        background-color: #fad007;
+        padding: 5px 15px;
+        line-height: 72px;
+        margin-bottom: 20px;
+      }
+      h4 {
+        color: #666;
+      }
+    }
+  }
+  &__documents__item {
+      background-image: url(../img/certificates/cadres.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 311px;
+    margin: auto;
+      margin-right: 10px;
+    a {
+      width: 75%;
+      margin-left: 12%;
+    margin-top: 14%;
+    margin-bottom: 11%;
+      img {
+        width: 100%;
+      }
+    }
+  }  
+}

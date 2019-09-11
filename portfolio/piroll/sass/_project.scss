@@ -1,0 +1,85 @@
+.project {
+  height: auto;
+  background-color: #f8f9f9;
+  position: relative;
+  overflow: hidden;
+  &__bg {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 60%;
+    background-image: url(../img/breakfast.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: cover;
+  }
+  &__info {
+    max-width: 435px;
+    margin-bottom: 50px;
+    padding-top: 105px;
+    
+    h3 {
+      font-size: 38px;
+      line-height: 1;
+      margin-bottom: 25px;
+      ;
+    }
+
+    p {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__client {
+    display: flex;
+    padding-bottom: 105px;
+
+    &__data {
+      display: flex;
+      flex-direction: column;
+      margin-right: 5px;
+
+      p {
+        text-align: left;
+        margin-bottom: 0;
+        font-weight: 500;
+        color: #171717;
+      }
+    }
+
+    &__name {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        text-align: left;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &_nav {
+    height: 100px;
+
+    &_wrap {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 42px;
+
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: .8px;
+        color: #1d1d1d;
+
+        &:hover {
+          color: #10c9c3;
+        }
+      }
+    }
+  }
+}

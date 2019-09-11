@@ -1,0 +1,164 @@
+/**********************
+* MEDIA
+**********************/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .header__logo {
+    .logo {
+      max-width: 320px;
+      width: 100%;
+    }
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .header__menu__nav a {
+    letter-spacing: normal;
+    font-size: 12px;
+  }
+
+  .header {
+    height: 60px;
+  }
+
+  .logo {
+    img {
+      width: 108px;
+      height: 44px;
+    }
+  }
+
+  .header__menu__icons {
+    width: 60px;
+  }
+
+  .main-screen__info__desc {
+    h1 {
+      font-size: 36px;
+      span:before {
+        top: 8px;
+      }
+    }
+
+    h4 {
+      letter-spacing: normal;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+
+  .main-screen__form {
+    input {
+      height: 60px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 60px;
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .header__burger {
+    display: flex;
+  }
+
+  .header__menu__nav {
+    display: none;
+  }
+
+  .header__menu {
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  .header__logo {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 75px;
+  }
+
+  .main-screen {
+    height:auto;
+  }
+
+  .main-screen__slider {
+    display: none;
+  }
+
+  .main-screen__info {
+    width: 100%;
+    background-color: #fff;
+    background-image: url(../img/jasper-van-der-meij-97274-unsplash@2x.jpg);
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__desc {
+      text-align: center;
+      max-width: 390px;
+      h1 {
+        letter-spacing: 0.9px;
+      }
+      h4 {
+        max-width: 310px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .main-screen__form {
+    flex-direction: column;
+    bottom: 25px;
+    input {
+      max-width: 100%;
+      border-bottom: 1px solid #8ca0bf;
+    }
+
+    button {
+      height: 60px;
+      width: 100%;
+    }
+    &__date,
+    &__duration,
+    &__button {
+      display: none;
+    }
+  }
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  
+  .header__menu__icons:nth-child(1),
+  .header__menu__icons:nth-child(2) {
+    display: none;
+  }
+
+  .header__menu__icons_blue {
+    &::before {
+      content: ' ';
+      position: absolute;
+      top: 17px;
+      right: 13px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #43d9d1;
+    }
+  }
+}
+
+

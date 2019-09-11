@@ -1,0 +1,212 @@
+/**********************
+* MEDIA
+**********************/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .works .works__item_wrap .works__item__min {
+    height: 300px;
+    &:hover {
+      h4 {
+        transform: translateY(-45px);
+      }
+    }
+  }
+  .main-screen__name h1 {
+    font-size: 72px;
+  }
+  .main-screen__name h3 {
+    font-size: 30px;
+  }
+  
+  .works .skills__item {
+    height: 80px;
+  }
+  .works .works__item_wrap .works__item {
+    margin-bottom: 100px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .works .works__item_wrap .works__item__min {
+    height: 250px;
+    &:hover {
+      h4 {
+        transform: translateY(-35px);
+      }
+    }
+    h2 {
+      font-size: 30px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+  }
+  .main-screen__menu a {
+    font-size: 18px;
+  }
+  
+  .works h2 {
+    font-size: 40px;
+  }
+  
+  .works .works__item_wrap .works__item {
+    margin-bottom: 80px;
+  }  
+  .contacts h2 {
+    font-size: 40px;
+  }
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .works .works__item_wrap .works__item {
+    width: 100%;
+    max-width: 500px;
+  }
+  .main-screen__menu {
+    right: 30px;
+  }
+  
+  .main-screen__social {
+    right: 30px;
+    a {
+      i {
+      font-size: 24px;
+    }
+    }
+  }
+  .works {
+    padding-top: 30px;
+  }
+  .works .skills {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .works__item_wrap {
+    margin-top: 30px;
+  }
+  
+  .main-screen__name h1 {
+    font-size: 60px;
+  }
+  .main-screen__name h3 {
+    font-size: 24px;
+  }
+  .works .skills__item {
+    width: 30%;
+    height: 70px;
+  }
+  
+  .contacts h2 {
+    font-size: 40px;
+  }
+  
+  footer .contacts__item {
+    a {
+      font-size: 16px;
+    }
+  }
+  .works .works__item_wrap .works__item {
+    margin-bottom: 60px;
+  }  
+  .works .skills__item {
+    margin: 15px 0;
+  }
+
+    
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.main-screen__social {
+   display: none;
+  }
+  footer .contacts_wrap {
+    flex-direction: column;
+    .contacts__item {
+      width: 67%;
+      margin: 0 auto;
+      a {
+        width: 100%;
+      }
+    }
+  }
+  
+  .contacts h2 {
+    font-size: 30px;
+  }
+  .main-screen__name h1 {
+    font-size: 48px;
+  }
+  .main-screen__menu a{
+    font-size: 14px;
+  }
+  
+  .works h2 {
+    font-size: 30px;
+  }
+  .works .skills {
+    padding: 15px;
+  }
+  .works .works__item_wrap .works__item {
+    margin-bottom: 40px;
+  }
+  .works__item_wrap .works__item__min h3 {
+    font-size: 28px;
+  }
+  
+  footer .contacts__item a {
+    margin-bottom: 5px;
+  }
+  
+  .works .skills__item {
+    margin: 10px 0;
+  }
+  
+  footer {
+    padding-top: 30px;
+  }
+  footer .contacts_wrap {
+    margin-top: 20px;
+  }
+  
+  .works .skills {
+    width: 80%;
+  }
+  
+  .main-screen {
+    background-attachment: scroll;
+  }
+  
+}
+
+@media only screen and (max-width : 420px) {
+  .works .works__item_wrap .works__item__min {
+    height: 220px;
+  }
+  .works__item_wrap .works__item__min h3 {
+    font-size: 24px;
+  }
+  .works .works__item_wrap .works__item__min h4 {
+    font-size: 16px;
+  }
+  .works__item_wrap .works__item__min {
+    width: 90%;
+  }
+  
+  .works .skills__item {
+    height: 60px;
+  }
+  .contacts h2 {
+    font-size: 24px;
+  }
+  footer .contacts__item a {
+    font-size: 14px;
+    i {
+      font-size: 24px;
+    }
+  }
+}

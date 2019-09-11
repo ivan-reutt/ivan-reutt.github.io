@@ -1,0 +1,14 @@
+.process {
+  padding: 100px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    max-width: 575px;
+  }
+}
+video {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}

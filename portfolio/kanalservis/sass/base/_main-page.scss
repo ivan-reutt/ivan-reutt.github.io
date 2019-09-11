@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    padding: 10px 15px;
+    max-width: 960px;
+    display: flex;
+    margin: auto;
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        &__item {
+            color: red;
+            &:hover {
+                color: green;
+            }
+        }
+    }
+}
