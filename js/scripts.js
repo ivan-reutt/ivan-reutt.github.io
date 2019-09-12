@@ -37,7 +37,7 @@ $(document).ready(function(){
 $(window).on('load', function () {
   setTimeout(function(){
     $preloader = $('.preloader'),
-      $loader = $preloader.find('#load');}, 300)
+      $loader = $preloader.find('#load');}, 3000)
     $loader.fadeOut();
     $preloader.delay(350).fadeOut('slow');
   });
