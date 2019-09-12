@@ -35,9 +35,8 @@ $(document).ready(function(){
 //  $('.preloader').find('i').fadeOut().end().delay(400).fadeOut('slow');
 //});
 $(window).on('load', function () {
-  setTimeout(function(){
     $preloader = $('.preloader'),
-      $loader = $preloader.find('#load');}, 3000)
+      $loader = $preloader.find('#load');
     $loader.fadeOut();
     $preloader.delay(350).fadeOut('slow');
   });

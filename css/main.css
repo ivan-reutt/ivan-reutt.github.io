@@ -706,8 +706,8 @@ a {
   width: 800px;
   height: 36px;
   left: 50%;
-  top: -webkit-calc(50% - 18px);
-  top: calc(50% - 18px);
+  top: 50%;
+  margin-top: -18px;
   margin-left: -400px;
   overflow: visible;
   -webkit-user-select: none;
@@ -825,44 +825,6 @@ a {
     left: 100%;
     -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);
-    opacity: 0;
-  }
-}
-
-@keyframes move2 {
-  0% {
-    left: 0;
-    opacity: 0;
-  }
-  30% {
-    left: 35%;
-    opacity: 1;
-  }
-  75% {
-    left: 65%;
-    opacity: 1;
-  }
-  100% {
-    left: 100%;
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes move2 {
-  0% {
-    left: 0;
-    opacity: 0;
-  }
-  30% {
-    left: 35%;
-    opacity: 1;
-  }
-  75% {
-    left: 65%;
-    opacity: 1;
-  }
-  100% {
-    left: 100%;
     opacity: 0;
   }
 }
@@ -1230,6 +1192,18 @@ footer .contacts__item a i {
   .works .works__item_wrap .works__item {
     margin-bottom: 100px;
   }
+  #load {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+    margin-top: -75px;
+    background-image: url(../../img/pre.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #load div {
+    display: none;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -1259,10 +1233,6 @@ footer .contacts__item a i {
   }
   .contacts h2 {
     font-size: 40px;
-  }
-  #load {
-    width: 600px;
-    margin-left: -300px;
   }
 }
 
@@ -1312,22 +1282,6 @@ footer .contacts__item a i {
   }
   .works .skills__item {
     margin: 15px 0;
-  }
-  #load {
-    width: 500px;
-    margin-left: -250px;
-  }
-  #load div {
-    font-size: 24px;
-    animation: move2 2.5s linear infinite;
-    -o-animation: move2 2.5s linear infinite;
-    -moz-animation: move2 2.5s linear infinite;
-    -webkit-animation: move2 2.5s linear infinite;
-    -ms-transform: none;
-        transform: none;
-    -o-transform: none;
-    -moz-transform: none;
-    -webkit-transform: none;
   }
 }
 
@@ -1388,13 +1342,6 @@ footer .contacts__item a i {
   }
   .main-screen {
     background-attachment: scroll;
-  }
-  #load {
-    width: 400px;
-    margin-left: -200px;
-  }
-  #load div {
-    font-size: 20px;
   }
 }
 
