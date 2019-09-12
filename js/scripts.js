@@ -1,3 +1,4 @@
+
 $(function(){
   new WOW().init();
   
@@ -30,10 +31,13 @@ $(document).ready(function(){
     });
 });
 
-//
-//$(document).ready(function(){
-// $('.sun').click(function () {
-// $(".main-screen").toggleClass('active');
-// $(".noiseBG").toggleClass('active');
-// });
+//$(window).load(function() {
+//  $('.preloader').find('i').fadeOut().end().delay(400).fadeOut('slow');
 //});
+$(window).on('load', function () {
+    $preloader = $('.preloader'),
+      $loader = $preloader.find('#load');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+  });
+
