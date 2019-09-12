@@ -126,6 +126,14 @@
   }
   #load div {
     font-size: 24px;
+    animation:move2 2.5s linear infinite;
+    -o-animation:move2 2.5s linear infinite;
+    -moz-animation:move2 2.5s linear infinite;
+    -webkit-animation:move2 2.5s linear infinite;
+    transform:none;
+    -o-transform:none;
+    -moz-transform:none;
+    -webkit-transform:none;
   }
 
     
@@ -227,13 +235,5 @@
     i {
       font-size: 24px;
     }
-  }
-  
-   #load {
-    width: 360px;
-    margin-left: -180px;
-  }
-  #load div {
-    font-size: 18px;
   }
 }
