@@ -56,7 +56,7 @@ ymaps.ready(function () {
             hintContent: 'КаналСервис'
         }, {
             iconLayout: 'default#image',
-            iconImageHref: '../img/marker.png',
+            iconImageHref: '/img/marker.png',
             iconImageSize: [48, 64],
             iconImageOffset: [-24, -64]
         });
@@ -65,37 +65,6 @@ ymaps.ready(function () {
         .add(myPlacemark);
 });
 
-//(function() {
-//      var modal = document.getElementById('myModal');
-//      var buttons = document.getElementsByClassName("myBtn")
-//      var span = document.getElementsByClassName("close");
-//
-//      for (var i = 0; i < buttons.length; i++) {
-//          buttons[i].onclick = function() {
-//          var id = this.getAttribute('data-modal');
-//          var modal = document.getElementById(id);
-//          modal.style.display = 'block';
-//        }
-//      }
-//
-//      for (var i = 0; i < span.length; i++) {
-//        span[i].onclick = function() {
-//          var id = this.getAttribute('data-modal');
-//          var modal = document.getElementById(id);
-//          modal.style.display = 'none';
-//        }
-//      }
-//
-//      window.onclick = function(event) {
-//        var isModal = (' ' + event.target.className + ' ').indexOf(' modal ') > -1;
-//        if (isModal) {
-//          event.target.style.display = "none";
-//        }
-//      }
-//
-//
-//
-//})();
 
 $(".phone_mask").mask("+375(99)999-99-99");
 
