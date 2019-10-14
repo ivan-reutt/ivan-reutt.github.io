@@ -1,0 +1,423 @@
+/**********************
+* MEDIA
+**********************/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0 19px;
+  }
+
+  .advantages {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .slider .carousel-inner .carousel-item .carousel-caption {
+    h5 {
+      font-size: 40px;
+      line-height: 50px
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 40px;
+      max-width: 70%;
+    }
+
+    mark {
+      font-size: 36px;
+      line-height: 80px;
+      padding: 12px 30px;
+    }
+
+    button {
+      font-size: 14px;
+      line-height: 40px;
+      padding: 0 50px;
+    }
+  }
+
+  .works {
+    padding: 80px 0;
+
+    &__info {
+      p {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+
+  .invite {
+    padding: 80px 0;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+  .header .contacts {
+    display: none;
+  }
+
+  .navbar .navbar-collapse .navbar-nav {
+
+    .nav-item {
+
+      .hover__menu,
+      .hover__menu_mega {
+        position: relative;
+        display: none;
+        width: 100%;
+        padding-left: 20px;
+      }
+
+      &.hover:hover {
+
+        .hover__menu,
+        .hover__menu_mega {
+          display: flex;
+        }
+      }
+
+      &.hover.ml-auto {
+        margin-left: 0 !important;
+      }
+    }
+
+    .advantages {
+      padding-top: 60px;
+      padding-bottom: 60px;
+
+      &__info {
+
+        h3 {
+          font-size: 24px;
+          line-height: 36px;
+          margin-bottom: 25px;
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 28px;
+          max-width: 80%;
+          margin-bottom: 50px;
+        }
+      }
+
+      img {
+        margin-right: 20px;
+      }
+
+
+      &__item {
+
+        h4 {
+          font-size: 20px;
+          line-height: 28px;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 22px;
+          letter-spacing: .1px;
+        }
+      }
+    }
+
+
+    .invite {
+      padding: 60px 0;
+    }
+
+    .resume {
+      padding: 50px 0
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+  .hover__menu_mega .menu_mega__focus,
+  .hover__menu_mega .menu_mega__special {
+    margin-bottom: 20px;
+  }
+
+  .slider .carousel-inner .carousel-item .carousel-caption {
+    padding: 0 10px;
+
+    h5 {
+      font-size: 24px;
+      letter-spacing: 2px;
+      line-height: 30px
+    }
+
+    p {
+      line-height: 16px;
+      margin-bottom: 20px;
+      max-width: 70%;
+      opacity: 1;
+    }
+
+    mark {
+      font-size: 22px;
+      line-height: 36px;
+      padding: 4px 20px;
+    }
+
+    button {
+      font-size: 12px;
+      line-height: 35px;
+      padding: 0 30px;
+    }
+  }
+
+  #carousel a.carousel-control-prev,
+  a.carousel-control-next {
+    width: 20px;
+    height: 20px;
+    top: calc(50% - 10px);
+    opacity: .3;
+    background-color: #506a85;
+    z-index: 20;
+    transition: all .2s;
+  }
+
+  #carousel a.carousel-control-prev,
+  #carousel a.carousel-control-next {
+
+    span {
+      line-height: 20px;
+      font-size: 18px;
+    }
+  }
+
+  #carousel .carousel-indicators_wrap {
+    bottom: -13px;
+  }
+
+  #carousel .carousel-indicators {
+    padding: 8px 5px;
+
+    li {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .works {
+    padding: 50px 0;
+
+    &__info {
+
+      h3 {
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .works .card {
+    margin-bottom: 50px;
+
+    .card-body {
+      padding: 15px 10px;
+
+      h5 {
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .works .works__slider .owl-carousel.owl-theme .owl-nav button.owl-prev {
+    margin-right: 75px;
+  }
+
+  .works .works__slider .owl-carousel.owl-theme .owl-nav button.owl-next {
+    margin-left: 75px;
+  }
+
+  .invite {
+    padding: 50px 0;
+
+    h3 {
+      font-size: 36px;
+      line-height: 44px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 30px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .resume {
+    padding: 40px 0 10px;
+
+    h5 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 18px;
+    }
+
+    &__who,
+    &__works,
+    &__get {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width : 580px) {
+
+  .hover__menu_mega .menu_mega__works {
+    margin-bottom: 20px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+
+  .contacts__left a:nth-child(1) {
+    margin-right: 10px;
+  }
+
+  .slider .carousel-inner .carousel-item .carousel-caption {
+    h5 {
+      font-size: 20px;
+      letter-spacing: 1.5px;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 14px;
+      margin-bottom: 10px;
+      max-width: 90%;
+    }
+
+    mark {
+      font-size: 18px;
+      line-height: 28px;
+      padding: 3px 16px;
+    }
+
+    button {
+      font-size: 10px;
+      line-height: 30px;
+      padding: 0 20px;
+    }
+  }
+
+  #carousel .carousel-indicators_wrap {
+    bottom: -12px;
+  }
+
+  #carousel .carousel-indicators {
+    padding: 8px 5px;
+
+    li {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  .advantages {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__info {
+
+      h3 {
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+        max-width: 100%;
+      }
+    }
+
+    img {
+      position: absolute;
+      right: 75%;
+    }
+
+
+    &__item {
+      padding-left: 65px;
+
+      h4 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: .1px;
+        margin-bottom: 15px;
+      }
+    }
+
+  }
+
+  .works {
+    padding: 40px 0;
+
+    &__info {
+
+      h3 {
+        font-size: 30px;
+        line-height: 36px;
+      }
+    }
+
+    .card {
+      margin-bottom: 30px;
+    }
+
+    .owl-carousel .owl-stage-outer {
+      margin-bottom: 20px;
+    }
+  }
+
+  .invite {
+    padding: 40px 0;
+
+    h3 {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    p {
+      margin-bottom: 25px;
+      font-size: 18px;
+    }
+  }
+
+  .resume {
+    &__get {
+      margin-bottom: 30px;
+    }
+  }
+}
